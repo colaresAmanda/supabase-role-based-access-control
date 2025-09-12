@@ -1,4 +1,4 @@
-# 🚀 Supabase Role-Based Access Control (RBAC) Tutorial | Next.js & SQL Guide
+# 🚀 Master Supabase RBAC: Update JWT Tokens with User Roles (Next.js SQL Guide)
 
 A comprehensive, step-by-step guide to implementing a secure role-based authentication system (Admin/User) using Supabase, Next.js, and PostgreSQL. Learn how to extend Supabase Auth with custom user roles, automatically populate user tables with triggers, and embed roles in JWT access tokens for secure API access.
 
