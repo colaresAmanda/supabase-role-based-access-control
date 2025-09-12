@@ -196,5 +196,6 @@ Your authentication system should now be working with role-based access control.
 
 This completes the setup of a role-based authentication system using Supabase and Next.js.
 
+----------
 
 **Found this tutorial helpful?** Please give it a star ⭐ on GitHub to show your support!
