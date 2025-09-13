@@ -14,6 +14,7 @@ import { Input } from '@/components/ui/input'
 import { Label } from '@/components/ui/label'
 import { createClient } from '@/utils/supabase/client'
 import { AlertCircleIcon } from 'lucide-react'
+import Link from 'next/link'
 import { useRouter } from 'next/navigation'
 import React, { FormEvent, useState } from 'react'
 
@@ -65,9 +66,6 @@ const page = () => {
         <CardDescription>
           Enter your email below to create an account
         </CardDescription>
-        <CardAction>
-          <Button variant="link">Login</Button>
-        </CardAction>
       </CardHeader>
       <CardContent>
         <form onSubmit={handleSignUp}>
@@ -101,18 +99,25 @@ const page = () => {
               />
             </div>
           </div>
-          <div className='my-4'>
- {error && (
-            <Alert variant="destructive">
-              <AlertCircleIcon />
-              <AlertTitle>{error}</AlertTitle>
-            </Alert>
-          )}
+          <div className="my-4">
+            {error && (
+              <Alert variant="destructive">
+                <AlertCircleIcon />
+                <AlertTitle>{error}</AlertTitle>
+              </Alert>
+            )}
           </div>
-         
+
           <Button type="submit" className="w-full" disabled={isLoading}>
             {isLoading ? 'Creating an account...' : 'Sign up'}
           </Button>
+
+          <div className="mt-4 text-center text-sm">
+            Already have an account?{' '}
+            <Link href="/auth/login" className="underline underline-offset-4">
+              Login
+            </Link>
+          </div>
         </form>
       </CardContent>
     </Card>
