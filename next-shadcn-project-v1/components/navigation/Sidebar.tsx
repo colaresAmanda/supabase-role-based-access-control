@@ -8,7 +8,6 @@ import {
 } from '@tabler/icons-react'
 import { usePathname } from 'next/navigation'
 import React from 'react'
-import ThemeSelector from './ThemeSelector'
 import SidebarItem from './SidebarItem'
 
 const Sidebar = () => {
