@@ -30,11 +30,8 @@ const Topnav = ({ data }: any) => {
   };
 
   return (
-    <div className="flex  justify-between shadow py-2 px-4 fixed top-0 w-full z-50 bg-background">
-      <div className="flex items-center gap-1">
-        <IconUfo className="w-8 h-8 text-primary" />
-        <h2 className="text-lg font-bold">SupabaseRBAC</h2>
-      </div>
+    <div className="flex  justify-between border-b-1 py-2 px-4 fixed top-0 w-full z-40 bg-background">
+     <div></div>
 
       <DropdownMenu>
         <DropdownMenuTrigger asChild>
