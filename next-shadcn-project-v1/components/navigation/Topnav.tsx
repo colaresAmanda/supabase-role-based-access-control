@@ -30,7 +30,7 @@ const Topnav = ({ data }: any) => {
   };
 
   return (
-    <div className="flex  justify-between border-b-1 py-2 px-4 fixed top-0 w-full z-40 bg-background">
+    <div className="flex  justify-between border-b-1 py-2 px-4 fixed top-0 w-full z-40 bg-background  h-14">
      <div></div>
 
       <DropdownMenu>

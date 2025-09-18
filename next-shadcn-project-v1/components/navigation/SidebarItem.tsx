@@ -46,7 +46,7 @@ const selectedClasses = isSelected
       <li className={`${baseClasses} ${selectedClasses}`}>
         <button
           onClick={toggleTheme}
-          className="flex gap-2 w-full items-center"
+          className="flex gap-2 w-full items-center cursor-pointer"
         >
           {theme === 'light' ? (
             <IconSun key="light" />

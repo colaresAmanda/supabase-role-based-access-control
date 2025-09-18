@@ -34,7 +34,10 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <Navigation />
+          <main className="min-h-[calc(100vh-3.5rem)] ml-64 mt-14">
           {children}
+
+          </main>
         </ThemeProvider>
       </body>
     </html>

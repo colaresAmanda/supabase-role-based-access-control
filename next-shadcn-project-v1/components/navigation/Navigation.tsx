@@ -13,10 +13,10 @@ const Navigation = async () => {
     redirect("/auth/login");
   }
   return (
-    <div>
+    <header>
       <Topnav data={data.claims}/>
       <Sidebar />
-    </div>
+    </header>
   )
 }
 
